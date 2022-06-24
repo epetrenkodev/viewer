@@ -12,7 +12,6 @@
   </property>
   <property name="font">
    <font>
-    <family>Consolas</family>
     <pointsize>11</pointsize>
    </font>
   </property>
@@ -31,10 +30,10 @@
         <property name="font">
          <font>
           <family>Consolas</family>
-          <pointsize>11</pointsize>
+          <pointsize>9</pointsize>
           <italic>false</italic>
           <bold>false</bold>
-          <kerning>true</kerning>
+          <kerning>false</kerning>
          </font>
         </property>
         <property name="verticalScrollBarPolicy">
@@ -58,7 +57,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>23</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="file">

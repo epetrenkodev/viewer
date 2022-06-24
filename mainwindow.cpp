@@ -40,7 +40,7 @@ void MainWindow::loadFile(QString fileName) {
     return;
   buffer = file.readAll();
   file.close();
-  setWindowTitle("Viewer - " + fileName);
+  setWindowTitle("Viewer - " + file.fileName());
   showFormat = checkFormat();
   showFile();
 }
@@ -58,6 +58,7 @@ MainWindow::FileFormat MainWindow::checkFormat() {
 
 void MainWindow::showFile() {
   ui->plainTextEdit->clear();
+
   switch (showFormat) {
   case ascii:
     showAsAscii();
